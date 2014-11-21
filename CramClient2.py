@@ -586,7 +586,7 @@ class CramClient(ConnectionListener):
         self.masterblock = pygame.image.load("./images/masterblock.png")
 
 
-cramClient = CramClient("localhost", 27000)
+cramClient = CramClient("beastMode.ddns.net", 27000)
 while 1:
     if cramClient.update() == 1:
         break
