@@ -14,7 +14,8 @@ class CramClient(ConnectionListener):
         " Setup Java Python connection
         """
         self.version = 1
-        self.leaders = []
+
+
         self.gateway = JavaGateway(auto_convert=True)
         self.pyva = self.gateway.entry_point.player1()
 
@@ -58,7 +59,7 @@ class CramClient(ConnectionListener):
         self.turn = False
         self.playerID = None
         self.gameID = None
-
+        self.leaders = []
         self.me = 0
         self.opponent = 0
         self.didiwin = False

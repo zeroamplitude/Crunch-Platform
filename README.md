@@ -13,9 +13,9 @@ Requirements:
 
 Installation - 
 
-	Debian Linux:
+	Debian Linux: The easy, fun and optimal way 
 
-		Open a terminal and type the followin commands:
+		Open a terminal and type the following commands:
 
 			sudo apt-get install git
 
@@ -25,8 +25,8 @@ Installation -
 
 			sudo easy_install py4j
 
-		Now in terminal navigate to the directory you want to store the files in.
-		For myself I choose Desktop. Here is an example:
+		Now in terminal navigate to the directory you want to store 
+		the files in. For myself I choose Desktop. Here is an example:
 			
 			I cd (change directories) to home
 				
@@ -40,8 +40,8 @@ Installation -
 
 			git clone https://github.com/ncdesouza/Crunch-Platform.git
 
-		If you type ls you will see a new directory called Crunch-Platform. Navigate to that
-		directory with the following command:
+		If you type ls you will see a new directory called Crunch-Platform. 
+		Navigate to that directory with the following command:
 
 			cd Crunch-Platform
 
@@ -57,12 +57,22 @@ Installation -
 			Pyva.java
 			README.md
 
-		The last installatioon is PodSixNet. Type the following command to setup PodSixNet:
+		The last installatioon is PodSixNet. Type the following command to
+		setup PodSixNet:
 
 			sudo python PodSixNet-78/setup.py install
 
-		You are now done with the installation. please see Configuration below for getting 
-		started and getting you algorithm operational.
+		You are now done with the installation. please see Configuration 
+		below for getting started and getting the client working.
+
+
+	Windows: The hard and ugly way
+
+		
+
+
+
+
 
 
 Configuration:
