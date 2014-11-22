@@ -1,5 +1,6 @@
 Crunch-Platform
 
+Windows users please see the Crunch-Platform.pdf for installation instructions.
 
 Requirements:
 
@@ -11,7 +12,7 @@ Requirements:
 
 	openjdk-7-jdk
 
-Installation - 
+Installation - I need to update these instructions. Will be done by 4pm Saturday November 22, 1014.
 
 	Debian Linux:
 
@@ -59,7 +60,8 @@ Installation -
 
 		The last installatioon is PodSixNet. Type the following command to setup PodSixNet:
 
-			sudo python PodSixNet-78/setup.py install
+			cd PodSixNet-78
+			sudo python setup.py install
 
 		You are now done with the installation. please see Configuration below for getting 
 		started and getting you algorithm operational.
@@ -95,11 +97,17 @@ Configuration:
 
 	3) Launch the Java-Python Gateway
 
-		You will only need to run Pyva.java this program will take care of calling your algorithms from Player1.java and Player2.java
+		You will need to run Pyva.java before the CramClient.py this program will take care of calling your algorithms from Player1.java and Player2.java. Keep it running in a seperate terminal while you are connected to the network.
 
 			java -cp '.:py4j0.9.jar' Pyva.java
 
-	4) Launch 
+	4) Launch the CramClient.py in a seperate terminal
+			
+			python CramClient.py
+			
+	5) Launch the second client CramClient2.py in anouther terminal
+			
+			python CramClient2.py
 
 
 5) :
