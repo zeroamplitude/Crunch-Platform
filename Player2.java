@@ -139,36 +139,37 @@ public class Player2 {
 	 *          			 -ents your move.
 	 * @return 	decoded - An array of integers to
 	 *          		  that represents a move.
-	 */																		
-	public static int[] decode(String playerMove) {			
-		
-		int[] decoded = new int[4];											
-		int temp = 0;														
-																			
-		for (int i = 0; i < 4; i++) {										
-			char puzzle = playerMove.charAt(i);								
-			if (i == 0 || i == 2) {											
-				if (puzzle == 'A') {										
-					temp = 0;												
-				} else if (puzzle == 'B') {									
-					temp = 1;												
-				} else if (puzzle == 'C') {									
-					temp = 2;												
-				} else if (puzzle == 'D') {									
-					temp = 3;												
-				} else if (puzzle == 'E') {									
-					temp = 4;												
-				} else {													
-					break;													
-				}															
-			} else { 														
-				temp = Character.getNumericValue(puzzle);										
-			}																														
-			decoded[i] = temp;												
-		} 																	
-		return decoded;														
-	}																		
-	
+	 */
+	public static int[] decode(String playerMove) {
+
+		int[] decoded = new int[4];
+		int temp = 0;
+
+		for (int i = 0; i < 4; i++) {
+			char puzzle = playerMove.charAt(i);
+			if (i == 0 || i == 2) {
+				if (puzzle == 'A') {
+					temp = 0;
+				} else if (puzzle == 'B') {
+					temp = 1;
+				} else if (puzzle == 'C') {
+					temp = 2;
+				} else if (puzzle == 'D') {
+					temp = 3;
+				} else if (puzzle == 'E') {
+					temp = 4;
+				} else {
+					break;
+				}
+			} else {
+				temp = Character.getNumericValue(puzzle) - 1;
+				System.out.println(temp);
+			}
+			decoded[i] = temp;
+		}
+		return decoded;
+	}
+
 
 	/**
 	 * encode - This function encodes an integer move
@@ -176,12 +177,12 @@ public class Player2 {
 	 *
 	 * @param 	move - An integer array that represents
 	 * 			       a move.
-	 * @return 	A									
-	 */																		
-	public static String encode(int[] move) {								
-										
-		char[] temp = new char[4];													
-		 																	
+	 * @return 	A
+	 */
+	public static String encode(int[] move) {
+
+		char[] temp = new char[4];
+
 		for (int i = 0; i < 4; i++) {
 			int puzzle = move[i];
 			if (i == 0 || i == 2) {
@@ -199,7 +200,8 @@ public class Player2 {
 					break;
 				}
 			} else {
-				temp[i] = Character.forDigit(puzzle,10);
+				puzzle = puzzle + 1;
+				temp[i] = Character.forDigit((puzzle),10);
 			}
 		}
 		String encoded = new String(temp);
