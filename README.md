@@ -2,6 +2,9 @@ Crunch-Platform
 
 Windows users please see the Crunch-Platform.pdf for installation instructions.
 
+If you experience errors while installing please refer to CommonInstallationErrors.pdf
+and see if your problem has been solved already.
+
 Requirements:
 	Linux/Windows
 	Python2.7
