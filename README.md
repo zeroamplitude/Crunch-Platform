@@ -16,7 +16,7 @@ Requirements:
 
 Installation -
 
-	Debian Linux: The easy, fun and optimal way 
+	Debian Linux: The easy, fun and optimal way
 
 		Open a terminal and type the following commands:
 
@@ -52,6 +52,7 @@ Installation -
 
 			images/
 			PodSixNet-78/
+			AlgorithmIntigration.md
 			CommonInstallationErrors.pdf
 			CramClient.py
 			CramClient2.py
