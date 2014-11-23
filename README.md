@@ -3,16 +3,15 @@ Crunch-Platform
 Windows users please see the Crunch-Platform.pdf for installation instructions.
 
 Requirements:
-
-	Ubuntu
+	Linux/Windows
 	Python2.7
 		- pygames
 		- PodSixNet
-		- 
-
+		- py4j
 	openjdk-7-jdk
+		- py4j
 
-Installation - I need to update these instructions. Will be done by 4pm Saturday November 22, 1014.
+Installation -
 
 	Debian Linux: The easy, fun and optimal way 
 
@@ -69,27 +68,26 @@ Installation - I need to update these instructions. Will be done by 4pm Saturday
 
 
 	Windows: The hard and ugly way
+		
+		Please see Crunch-Platform.pdf for a installation instructions
 
 		
-
-
-
-
-
-
 Configuration:
 	1) Edit Player1.java and Player2.java
 
 		Open Player1.java and Player2.java in your favourite text editor or IDE.
 		
-		To test the client on your computer I left a random algorithm in the file. Leave that there for now and once you are able to establish a game you can put your algorithm into the file.
+		To test the client on your computer I left a random algorithm in the file. Leave that there 
+		for now and once you are able to establish a game you can put your algorithm into the file.
 
 		Change your team name:
 
 			** Important: 
 				Please limit the size of team names to 5 character. This is to keep the GUI clean.  
 
-			The server will only accept unique team names so in the Player1 constructor put your team name there. Do the same with Player2.java except use a different name or add a number on the end.
+			The server will only accept unique team names so in the Player1 constructor put your 
+			team name there. Do the same with Player2.java except use a different name or add a number 
+			on the end.
 
 			ex. Nick
 				Nick2
@@ -107,7 +105,9 @@ Configuration:
 
 	3) Launch the Java-Python Gateway
 
-		You will need to run Pyva.java before the CramClient.py this program will take care of calling your algorithms from Player1.java and Player2.java. Keep it running in a seperate terminal while you are connected to the network.
+		You will need to run Pyva.java before the CramClient.py. This program will call your algorithm
+		from Player1.java and Player2.java. Keep it running in a seperate terminal while you are connected
+		to the network. This terminal will output and System.out.print() calls within the two player classes. 
 
 			java -cp '.:py4j0.9.jar' Pyva.java
 
@@ -115,12 +115,12 @@ Configuration:
 			
 			python CramClient.py
 			
-	5) Launch the second client CramClient2.py in anouther terminal
+	5) Launch the second client CramClient2.py in another terminal
 			
 			python CramClient2.py
 
 
-5) :
+Game Play :
 		Player vs Bot:		Play against the servers AI
 				- 
 
