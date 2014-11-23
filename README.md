@@ -52,8 +52,10 @@ Installation -
 
 			images/
 			PodSixNet-78/
+			CommonInstallationErrors.pdf
 			CramClient.py
 			CramClient2.py
+			Crunch-Platform.pdf
 			Player1.java
 			Player2.java
 			py4j0.9.jar
